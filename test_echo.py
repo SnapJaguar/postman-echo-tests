@@ -8,7 +8,7 @@ BASE_URL = "https://postman-echo.com"
 def test_get_status_code():
     """Тест 1: Проверка успешного статус-кода для GET-запроса."""
     response = requests.get(f"{BASE_URL}/get")
-    assert response.status_code == 500
+    assert response.status_code == 200
 
 
 def test_get_with_query_params():
